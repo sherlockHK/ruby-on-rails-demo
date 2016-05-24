@@ -47,6 +47,6 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text)   #what's mean
-  end
+    params.require(:article).permit(:title, :text)   #allow the 'title','text' field in model 'article' could be mass assigned.
+   end
 end
